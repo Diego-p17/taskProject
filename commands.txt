@@ -1,0 +1,62 @@
+#install virtualenv
+pip install virtualenv
+
+#create virtualenv
+virtualenv venv
+
+#_init_virtualenv
+./venv/Scripts/activate
+
+#install django
+pip install django
+
+#init_project_django
+django-admin startproject myproject
+django-admin startproject myproject .
+
+#_init_service
+python manage.py runserver
+python manage.py runserver 3000
+
+#create APP
+python manage.py startapp crud
+
+#migration dbsqlite
+python manage.py makemigrations
+
+python manage.py migrate
+
+#shell manage.py
+python manage.py shell
+
+>>> from myapp.models import Project,Task
+>>> object = Project(name = "aplicacion movil")
+>>> p.save()
+
+#All objects in the project table
+>>> Project.objects.all()
+
+#search object in the table
+>>>  Project.objects.get(id=1)
+>>>  Project.objects.get(name= "aplicacion movil")
+
+#insert data in the relation table
+>>> object = Project.objects.get(id=1)
+>>> object.task_set.all()
+>>> object.task_set.create(title = "descargar IDE")
+
+#search(filter) data in the table
+>>> Project.objects.filter(name = "aplicacion movil")
+>>> Project.objects.filter(name_startswith = "aplicacion")
+
+#Admin Module
+#Create User  with manager.py
+python manager.py createsuperuser
+
+
+#create requeriments.txt
+crear requeriments.txt
+pip freeze > requirements.txt
+
+#instalar requeriments
+pip install -r requirements.txt
