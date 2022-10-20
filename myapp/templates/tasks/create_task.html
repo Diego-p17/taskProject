@@ -1,0 +1,16 @@
+{% extends 'layout/base.html'%}
+
+{% block content %}
+    <div class="create_project">
+        <h1>Create Task</h1>
+        <div class="body_form">
+            <form class="form" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <button>
+                    save
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

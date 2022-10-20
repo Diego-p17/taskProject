@@ -1,0 +1,96 @@
+
+
+/*-- Global Styles --*/
+
+body{
+    background-color: #202020;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+   max-width: 1200px;
+   background-color: rgb(118, 118, 118);
+   padding: 30px;
+   margin: 15px auto;
+}
+
+/* NavBar */
+.navbar{
+    background-color: #0f79bb;
+    padding: 5px 10px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: rgb(89, 95, 100);
+}
+/* projects */
+
+.card{
+    background-color: #0f79bb;
+    margin: 10px auto;
+    padding: 12px;
+}
+
+.create_project{
+    text-align: center;
+}
+/* form */
+
+.body_form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    color: #202020;
+    border-radius: 15px;
+}
+.body_form .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding: 20px;
+}
+.form label{
+ font-size: 25px;
+ font-weight: 400;
+
+}
+.form .input_form{
+    border-radius: 15px;
+    border: none;
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    -webkit-box-shadow: -1px 3px 33px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 33px -7px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 33px -7px rgba(0,0,0,0.75);
+}
+
+.form button{
+    width: 100%;
+    border: none;
+    background-color: #008CBA;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    padding: 12px;
+    font-size: 15px;
+    color: #fff;
+}
+.form button:hover{
+    background-color: #0f79bb;
+}
